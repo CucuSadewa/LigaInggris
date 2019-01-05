@@ -32,7 +32,7 @@ public class LigaInggris {
             String gambarTeam = obj.getString("strTeamBadge");
             String intFormedYear = obj.getString("intFormedYear");
             String namaPelatih = obj.getString("strManager");
-            String namaStadion = obj.getString("strStadiom");
+            String namaStadion = obj.getString("strStadium");
             String gambarStadion = obj.getString("strStadiumThumb");
             String desdripsiStadion = obj.getString("strStadiumDescription");
             String lokasiStadion = obj.getString("strStadiumLocation");
@@ -66,6 +66,7 @@ public class LigaInggris {
             this.deskripsiTeam = desktipsiTeam;
             this.jerseyTeam = jerseyTeam;
             this.logoTeam = logoTeam;
+
         }catch (Exception e){
             e.printStackTrace();
         }

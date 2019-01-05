@@ -56,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
                         String hasil = new String(responseBody);
                         JSONObject jsonTeam = new JSONObject(hasil);
                         JSONArray jsonArray = jsonTeam.getJSONArray("teams");
-                        //Log.d("string", "onSuccess : "+ hasil);
+                        Log.d("string", "onSuccess : "+ hasil);
                         for (int i = 0; i < jsonArray.length(); i++){
                             JSONObject ligainggrisObj = jsonArray.getJSONObject(i);
                             LigaInggris ligaInggris = new LigaInggris(ligainggrisObj);
-                            //Log.d("teams", "onSuccess : "+ligaInggris.getNamaTeam());
+                            Log.d("teams", "onSuccess : "+ligaInggris.getNamaTeam());
                             ligaInggrises.add(ligaInggris);
                         }
                     }catch (Exception e){
